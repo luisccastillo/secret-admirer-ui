@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Secret admirer</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <!--Replace with your tailwind.css once created-->
+    <link href="https://unpkg.com/@tailwindcss/custom-forms/dist/custom-forms.min.css" rel="stylesheet">
+    <style>@import "https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap";
+html {
+  font-family: Poppins, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+}
+
+</style>
+  </head>
+
+  <body class="leading-normal  tracking-normal text-indigo-300 m-6 bg-cover bg-fixed" style="background-color: #1c2324">
+    <div class="h-full ">
+      <!--Nav-->
+      <div class="w-full container mx-auto">
+        <div class="w-full flex items-center justify-between">
+          <a class="flex text-indigo-300 no-underline hover:no-underline font-bold text-3xl lg:text-4xl" href="https://github.com/iExecBlockchainComputing/secret-admirer">
+            <span class="bg-clip-text text-transparent bg-gradient-to-r from-yellow-200 via-green-500  to-yellow-200">
+                  secret admirer
+              </span>
+          </a>   
+          <div class="justify-end">
+
+        
+          <div class="content-center">
+            <button class="bg-red-700  text-white font-bold py-2 px-4 rounded focus:ring  transform transition hover:scale-105 duration-300 ease-in-out disabled:opacity-15" id="wallet_button" style="margin: 4px" type="button">
+            Connect wallet
+          </button></div>
+
+        </div>
+        </div>
+      </div>
+
+
+      <div class="container  md:pt-24 mx-auto">
+
+        <div class="alert bg-gradient-to-l from-yellow-100 to-yellow-200  rounded-lg py-4 px-5 mb-3 text-base text-yellow-700 inline-flex items-center w-full alert-dismissible fade show " role="alert" style="margin-bottom: 4%" id="infobox">
+          <strong class="mr-1">Holy guacamole! </strong> send an SMS without revealing the sender's number, all while preserving the confidentiality of your message.
+          <button type="button" class="btn-close box-content w-4 h-4 p-1 ml-auto text-yellow-900 border-none rounded-none opacity-50 focus:shadow-none focus:outline-none focus:opacity-100 hover:text-yellow-900 hover:opacity-75 hover:no-underline" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+
+          <form class="opacity-20 mx-auto bg-gradient-to-r   shadow-xl from-green-600  to-green-800  rounded-lg px-10 pt-6 pb-8 mb-4 max-w-lg " id="launcher_form">
+
+            <div class="mb-4">
+              <label class="block text-gray-300 py-2 font-bold mb-2" for="secret1name_input">
+                Recipient's number
+              </label>
+              <input class="shadow appearance-none border rounded w-full p-3 text-gray-700 leading-tight focus:ring transform transition hover:scale-105 duration-300 ease-in-out" id="secret1_input" style="background: #cfe1bc" type="text" placeholder="+33600000000" required="">
+            </div>
+
+            <div class="mb-4">
+                <label class="block text-gray-300 py-2 font-bold mb-2" for="secret2">
+                  Secret message
+                </label>
+                <input class="shadow appearance-none border rounded w-full p-3 text-gray-700 leading-tight focus:ring transform transition hover:scale-105 duration-300 ease-in-out" id="secret2_input" style="background: #cfe1bc" type="text" placeholder="Hello from your secret admirer !" required="">
+              </div>
+
+            <div class="flex items-center justify-between pt-4">
+                <button class=" text-white font-bold py-2 px-4 rounded focus:ring transform transition hover:scale-105 duration-300 ease-in-out" type="button" style="background-color: #116652" id="secret1_button">
+              1 - Store number
+              </button>
+
+              <button class="text-white font-bold py-2 px-4 rounded focus:ring transform transition hover:scale-105 duration-300 ease-in-out" type="button" style="background-color: #116652" id="secret2_button">
+            2 - Store message
+            </button>
+
+
+              <button class=" opacity-50 bg-gradient-to-l from-yellow-300 to-green-600 hover:from-green-600 hover:to-yellow-300  text-white font-bold py-2 px-4 rounded focus:ring transform transition hover:scale-105 duration-800 ease-in-out" type="button" id="launch_button">
+                Send
+              </button>
+            </div>
+          </form>
+    
+      </div>
+    </div>
+  </body>
+  <script src="/index.975ef6c8.js" defer=""></script>
+</html>
